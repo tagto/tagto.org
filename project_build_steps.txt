@@ -1,0 +1,26 @@
+# Install react-static
+brew install yarn
+yarn global add react-static
+
+# Clone from github
+git clone https://github.com/tagto/tagto.org.git
+cd tagto.org
+yarn install
+
+# Running the site for development on localhost
+yarn start
+# go to localhost
+
+# Testing production build
+react-static build --staging
+cd dist
+python -m http.server
+# go to localhost
+
+# Build for production
+react-static build
+# copy dist to s3
+
+# Note: this project started from the following command
+# (selecting 'styled-components')
+react-static create
