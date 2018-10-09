@@ -26,7 +26,7 @@ export default {
       },
     ]
   },
-  siteRoot: 'https://tagto.com',
+  siteRoot: 'https://tagto.org',
   renderToHtml: (render, Comp, meta) => {
     const sheet = new ServerStyleSheet()
     const html = render(sheet.collectStyles(<Comp />))
