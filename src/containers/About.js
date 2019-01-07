@@ -26,7 +26,7 @@ export default withSiteData(() => {
     <MainBlock>
       <div>
         <CenterDiv>
-          <h1>Why work with us?</h1>
+          <h1>Why hire us?</h1>
         </CenterDiv>
         <AboutTextBlock />
         <EmailCTA />
