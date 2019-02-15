@@ -64,6 +64,9 @@ class MainOutLinks extends React.Component {
             <Card to="https://medium.com/@galea" target="_blank" background="rgba(70, 196, 81, 0.7)" onClick={this.mediumClick}>
               <InnerCard onClick={this.mediumClick}>Medium</InnerCard>
             </Card>
+            <Card to="/dataviz/crypto-monetary-base" target="_blank" background="rgb(255, 48, 48, 0.7)" >
+              <InnerCard>Crypto Monetary Base Charts</InnerCard>
+            </Card>
         </Cards>
       </div>
     );
