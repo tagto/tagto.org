@@ -21,6 +21,14 @@ export default {
         component: 'src/containers/Blog',
       },
       {
+        path: '/dataviz',
+        component: 'src/containers/DataViz',
+      },
+      {
+        path: '/dataviz/crypto-monetary-base',
+        component: 'src/containers/DataViz/CryptoMonetaryBase',
+      },
+      {
         is404: true,
         component: 'src/containers/404',
       },

@@ -9,8 +9,12 @@ import EmailSignup from '../components/Home/EmailSignup'
 
 import logoImg from '../logo.svg'
 
+const MainBlock = styled.div`
+  max-width: 100%;
+`
+
 export default withSiteData(() => (
-  <div>
+  <MainBlock>
     <Head>
       <title>TagTO | Analytics and Data Consulting Services</title>
       <meta name="description" content="On the forefront of practical data analytics for business. Reach out today for consulting services or software build requests! Based in Toronto, ON." />
@@ -27,5 +31,5 @@ export default withSiteData(() => (
       <EmailSignup />
     </div>
     <Bubbles />
-  </div>
+  </MainBlock>
 ))

@@ -17,7 +17,7 @@ const PersonCard = styled.div`
 
 const Frame = styled.iframe`
   width: 100%;
-  maxWidth: 800px;
+  max-width: 800px;
   margin: 0 auto
 `
 

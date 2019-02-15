@@ -4,31 +4,35 @@ import styled, { injectGlobal } from 'styled-components'
 import { hot } from 'react-hot-loader'
 
 import Routes from 'react-static-routes'
-import bgImg from './background.jpg';
 
+  // html { 
+  //   background: url(${bgImg}) no-repeat center center fixed; 
+  //   -webkit-background-size: cover;
+  //   -moz-background-size: cover;
+  //   -o-background-size: cover;
+  //   background-size: cover;
+  // }
 
 injectGlobal`
-html { 
-  background: url(${bgImg}) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
+  html {
+    background: #FF5F6D;
+    background: -webkit-linear-gradient(-45deg, #FF5F6D , #FFC371);
+    background: linear-gradient(-45deg, #FF5F6D , #FFC371);
+    background-size: fixed;
+    min-height: 100%;
+  }
 
   body {
     font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial,
       'Lucida Grande', sans-serif;
     font-weight: 300;
     font-size: 24px;
-
   }
 `
 
 const AppStyles = styled.div`
   a {
     text-decoration: none;
-    color: white;
     font-weight: bold;
   }
 
@@ -105,6 +109,7 @@ const App = () => (
         <Link exact to="/">Home</Link>
         <Link to="/about">About</Link>
         <Link to="/blog">Blog</Link>
+        <Link to="/dataviz">Data Viz</Link>
       </nav>
       <div className="content">
         <Routes />
