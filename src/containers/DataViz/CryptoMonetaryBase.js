@@ -72,6 +72,22 @@ export default withSiteData(() => {
       <CenterDiv>
         <h2>Cryptocurrency Monetary Base Comparison</h2>
       </CenterDiv>
+      <div>
+        <p>
+          Estimated future monetary base charts for the top cryptocurrencies, 
+          including Bitcoin, Ethereum, Ripple, Stellar, EOS, Litecoin, Cardano, 
+          Monero, TRON, IOTA, Dash, Ethereum Classic, NEO, Dogecoin, Nano, and 
+          BitShares.
+          <br/><br/>
+          Many cryptocurrencies are set to be forever inflationary. For the 
+          purpose of comparison, we set the 100% mark of these cases at ~2140.
+          This is the year when BTC max supply will be reached.
+          <br/><br/>
+          For a detailed explanation of these charts please see the <a href="https://medium.com/tagto/cypherpunk-central-planning-crypto-distribution-inflation-charts-36f666ebf16d" target="_blank">compendium blog post</a>.
+          <br/><br/>
+          The source code is available on <a href="https://github.com/agalea91/crypto-monetary-base/tree/master/jupyter-notebooks" target="_blank">GitHub</a>.
+        </p>
+      </div>
       <VizDiv>
         <Frame id="viz-1" src="" frameBorder="0" />
       </VizDiv>
