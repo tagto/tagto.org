@@ -27,6 +27,6 @@ react-static build
 - Build for production with `react-static build`
 - Make copy of dist e.g. `cp -r dist dist-2018-12-01`
 - Delete current bucket (optional) `aws s3 rm s3://tagto.org --recursive --profile tagto.org`
-- Update bucket (run from inside `dist`) `aws s3 cp . s3://tagto.org/ --recursive --exclude ".*" --profile tagto.org`
+- Update bucket (run from inside `dist`) `aws s3 cp .dist s3://tagto.org/ --recursive --exclude ".*" --profile tagto.org`
 - Update cloudfront cache `aws cloudfront create-invalidation --distribution-id ${CLOUDFRONT_DIST_ID_TAGTO} --paths '/*'`
 
